@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cz-cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Webová aplikace pojištění." />
+    <meta name="keywords" content="Pojištění, zdraví, nečekané události" />
+    <meta name="author" content="Lucie Blechová" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pojištění Petr</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1><span>Petr Knot</span></h1>
+        <small>Pojištění</small>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="menu-link-info" href="#" id="show-info">Info</a></li>
+          <li>
+            <a class="menu-link-registration" href="#" id="show-registration"
+              >Registrace</a
+            >
+          </li>
+          <li>
+            <a class="menu-link-evidence" href="#" id="show-evidence"
+              >Evidence</a
+            >
+          </li>
+          <li>
+            <a class="menu-link-contact" href="#" id="show-kontact">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+      <section id="registration-section">
+        <form>
+          <h3>Registrace</h3>
+          <fieldset>
+            <div class="row">
+              <div class="column">
+                <label for="jmenoInput">Jméno:</label>
+                <input type="text" id="jmenoInput" class="jmenoInput" />
+              </div>
+              <div class="column">
+                <label for="prijmeniInput">Příjmení:</label>
+                <input type="text" id="prijmeniInput" class="prijmeniInput" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <label for="vekInput">Věk:</label>
+                <input type="text" id="vekInput" class="vekInput" />
+              </div>
+              <div class="column">
+                <label for="telefonInput">Telefon:</label>
+                <input type="text" id="telefonInput" class="telefonInput" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <label for="emailInput">E-mail:</label>
+                <input type="text" id="emailInput" class="e-mailInput" />
+              </div>
+              <div class="column">
+                <label for="povolaniInput">Povolání:</label>
+                <input type="text" id="povolaniInput" class="povolaniInput" />
+              </div>
+            </div>
+
+            <a href="" class="odeslat-tlacitko">Odeslat</a>
+          </fieldset>
+        </form>
+      </section>
+
+      <div id="evidence-container"></div>
+
+      <section class="evidence-section">
+        <h3>Evidence</h3>
+      </section>
+
+      <section id="info-section" style="display: none">
+        <h3>Informace o mně</h3>
+        <p>Jsem Petr Knot, začínající programátor...</p>
+        <p>Pojistím Vás, psa, kočku, i sebe!</p>
+      </section>
+
+      <section id="kontakt-section" style="display: none">
+        <h3>Kontakt</h3>
+        <p>604 484 369</p>
+      </section>
+    </article>
+
+    <footer>Vytvořil &copy;Petr Knot - začínající programátor</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
